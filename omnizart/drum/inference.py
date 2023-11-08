@@ -10,7 +10,6 @@ MIDI_PITCHES = {
     'Open_Hat': 46,
     'Low_Tom': 45,
     'Rim': 37,
-    'Clap': 39,
 }
 
 # Define the indices of the instruments in the model's output
@@ -21,12 +20,11 @@ MODEL_OUTPUT_INDICES = {
     'Open_Hat': 6,
     'Low_Tom': 7,
     'Rim': 2,
-    'Clap': 3,
 }
 
 def filter_activations(activations_dict, pred, m_beat_arr):
     LOW_SOUNDS = ['Kick', 'Low_Tom']
-    HIGH_SOUNDS = ['Snare', 'Closed_Hat', 'Open_Hat', 'Rim', 'Clap', 'Cowbell']
+    HIGH_SOUNDS = ['Snare', 'Closed_Hat', 'Open_Hat', 'Rim']
 
     # This dictionary will hold the filtered activations
     filtered_activations = {instrument: [] for instrument in activations_dict}
