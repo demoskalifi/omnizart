@@ -29,7 +29,7 @@ pretty_midi = "^0.2.9"
 librosa = "^0.8.0"
 madmom = "^0.16.1"
 pillow = "^8.3.2"
-pyyaml = "^5.3.1"
+# pyyaml = "^5.3.1" ### Use conda install instead
 jsonschema = "^3.2.0"
 tqdm = "^4.49.0"
 pyfluidsynth = "^1.2.5"
@@ -37,7 +37,7 @@ vamp = "^1.1.0"
 urllib3 = "1.26.4"
 spleeter = "^2.3.0"
 mir_eval = "^0.6"
-tensorflow = "2.5.0"
+# tensorflow = "2.5.0" ### User tensorflow-macos, tensorflow-metal
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
