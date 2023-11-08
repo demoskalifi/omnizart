@@ -70,7 +70,6 @@ def inference(pred, m_beat_arr, bass_drum_th, snare_th, hihat_th, default_th=0.9
         'Open_Hat': default_th,
         'Low_Tom': default_th,
         'Rim': default_th,
-        'Clap': default_th,
     }
 
     activations_dict = {}
